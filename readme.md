@@ -1,5 +1,7 @@
 ﻿A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 
+---
+
 T1: number 1 has binary representation of 1 and has no binary gaps.  This is a boundary test as 1 is the lowest possible positive integer.
 
 T2: number 9 has binary representation 1001 and contains a binary gap of length 2.
@@ -17,6 +19,8 @@ T7: given N = 1041 the function should return 5, because N has binary representa
 T8: Given N = 32 the function should return 0, because N has binary representation '100000' and thus no binary gaps.
 
 T9: The number 2,147,483,647 has binary representation 1111111111111111111111111111111 and this no binary gaps.  This is a boundary test as 2,147,483,647 is the highest possible integer within the constraints of the problem.
+
+---
 
 Write a function:
 
