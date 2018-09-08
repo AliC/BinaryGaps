@@ -54,7 +54,6 @@ namespace BinaryGaps
 
             IEnumerable<int> pair;
             int skipThisMany = 0;
-            int count = indices.Count();
 
             while ((pair = indices.Skip(skipThisMany).Take(2)).Count() == 2)
             {
