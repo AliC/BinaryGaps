@@ -17,18 +17,18 @@ namespace BinaryGaps
 
         private string GetRepresentation(int n)
         {
-            var map = GenerateMapFor(n);
+            var map = GenerateMap();
             var value = new Queue();
 
             //TODO ADC: try this collection out at some point - not seen it before
             //System.Collections.BitArray
 
-            foreach (var place in map)
+            foreach (var placeValue in map)
             {
-                if (n >= place)
+                if (n >= placeValue)
                 {
                     value.Enqueue("1");
-                    n -= place;
+                    n -= placeValue;
                 }
                 else
                 {
@@ -39,20 +39,12 @@ namespace BinaryGaps
             return string.Join("", value.Cast<string>());
         }
 
-        private IEnumerable<int> GenerateMapFor(int n)
+        private IEnumerable<int> GenerateMap()
         {
-            int place = 0;
-            int val = 0;
-            List<int> vals = new List<int>();
-            while (n > val)
+            for (int i = 30; i >= 0; i--)
             {
-                val = 1 << place;
-                place++;
-                vals.Add(val);
+                yield return 1 << i;
             }
-
-            vals.Reverse();
-            return vals;
         }
 
         private int GetLongestGap(string binaryRepresentation)

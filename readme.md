@@ -16,9 +16,9 @@ T6: The number 32 has binary representation 100000 and has no binary gaps.
 
 T7: given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5.
 
-T8: Given N = 32 the function should return 0, because N has binary representation '100000' and thus no binary gaps.
+T8: The number 2,147,483,647 has binary representation 1111111111111111111111111111111 and has no binary gaps.  This is a boundary test as 2,147,483,647 is the highest possible integer within the constraints of the problem.
 
-T9: The number 2,147,483,647 has binary representation 1111111111111111111111111111111 and this no binary gaps.  This is a boundary test as 2,147,483,647 is the highest possible integer within the constraints of the problem.
+T9: The number 1,073,741,825 has binary representation 1000000000000000000000000000001 and has a single binary gap of 29.  This is a boundary test as 1,073,741,825 contains the longest possible binary gap within the constraints of the problem.
 
 ---
 
